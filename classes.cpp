@@ -3,7 +3,7 @@
 using namespace std;
 
 class Employee{
-	public:
+public:
 	// public access specifier makes everything
 	// under this block visible to code outside 
 	// the scope of this class e.g. in main
@@ -13,7 +13,7 @@ class Employee{
 	void setName(string uname);
 	void setSalary(double amount);
     // data fields (member variables defined below)
-	string getName();
+	string getName() const;  //accessor
 private:
 	string name;
 	double salary;
