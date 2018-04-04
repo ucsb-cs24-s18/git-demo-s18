@@ -8,7 +8,7 @@ class Employee{
 	// under this block visible to code outside 
 	// the scope of this class e.g. in main
 	// methods of the class defined below:
-	void increment(double amount); 
+	void increment(double amount);  //Here is a commment
 	void printInfo();
 	void setName(string uname);
 	void setSalary(double amount);
