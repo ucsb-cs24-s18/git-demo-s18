@@ -13,9 +13,19 @@ class Employee{
 	void setName(string uname);
     // data fields (member variables defined below)
 	string getName();
+private:
 	string name;
 	double salary;
 };
+
+void Employee::setName(string uname){
+ 	name = uname;
+}
+
+string Employee::getName(){
+	return name;
+}
+
 
 // We will implement the methods of the class
 // in the next lecture
@@ -23,10 +33,10 @@ class Employee{
 int main(){
 	Employee secretary, president;
 	//Declaring two objects of type Employee
-	secretary.name = "Rabbit";
-	president.name = "Turtle";
-	cout<< " Name of secretary: "<< secretary.name<<endl;
-	cout<< " Name of president: "<< president.name<<endl;
+	secretary.setName ("Rabbit");
+	president.setName( "Turtle");
+	cout<< " Name of secretary: "<< secretary.getName()<<endl;
+	cout<< " Name of president: "<< president.getName()<<endl;
 
 	return 0;
 }
