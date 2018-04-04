@@ -11,6 +11,7 @@ class Employee{
 	void increment(double amount); 
 	void printInfo();
 	void setName(string uname);
+	void setSalary(double amount);
     // data fields (member variables defined below)
 	string getName();
 private:
@@ -26,6 +27,13 @@ string Employee::getName(){
 	return name;
 }
 
+void Employee::setSalary(double amount){
+	salary = amount;
+}
+
+void Employee::increment(double amount){
+	salary = salary+ amount;
+}
 
 // We will implement the methods of the class
 // in the next lecture
